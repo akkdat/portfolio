@@ -1,0 +1,93 @@
+[  
+  {  
+    "key":"integrated designer",
+    "values":[  
+      {  
+        "reason":"Interdisciplinary knowledge",
+        "device":"integrated designer",
+        "value":0.85
+        
+      },
+      {  
+        "reason":"Design tool",
+        "device":"integrated designer",
+        "value":0.8
+      },
+      {  
+        "reason":"Communication skill",
+        "device":"integrated designer",
+        "value":0.95
+      },
+      {  
+        "reason":"Design approach",
+        "device":"integrated designer",
+        "value":1
+      },
+      {  
+        "reason":"Research methodology",
+        "device":"integrated designer",
+        "value":0.76
+      },
+      {  
+        "reason":"Computer programming",
+        "device":"integrated designer",
+        "value":0.4
+      },
+      {  
+        "reason":"Business acumen",
+        "device":"integrated designer",
+        "value":0.5
+      },
+      {  
+        "reason":"Time management",
+        "device":"integrated designer",
+        "value":0.9
+      }
+    ]
+  },
+  {  
+    "key":"myself",
+    "values":[  
+      {  
+        "reason":"Battery Life",
+        "device":"myself",
+        "value":0.7
+      },
+      {  
+        "reason":"Design tool",
+        "device":"myself",
+        "value":0.75
+      },
+      {  
+        "reason":"Communication skill",
+        "device":"myself",
+        "value":0.62
+      },
+      {  
+        "reason":"Design approach",
+        "device":"myself",
+        "value":0.7
+      },
+      {  
+        "reason":"Research methodology",
+        "device":"myself",
+        "value":0.5
+      },
+      {  
+        "reason":"Computer programming",
+        "device":"myself",
+        "value":0.3
+      },
+      {  
+        "reason":"Business acumen",
+        "device":"myself",
+        "value":0.25
+      },
+      {  
+        "reason":"Time management",
+        "device":"myself",
+        "value":0.7
+      }
+    ]
+  }
+]
