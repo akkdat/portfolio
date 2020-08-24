@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: freight-neo-pro, sans-serif;
+  }
+
+@media only screen and (min-width : 1080px) {
+
+  .custom-container-width {
+    max-width: 1080px;
+  }
+
+}
+
+figcaption {
+  text-align: center;
+  font-size: 80%;
+  padding-bottom: 40px;
+}
+
+.parallax-window a:link, a:visited {
+  color: white;
+}
+
+#next.jumbotron {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("images/next.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vw * 0.7);
+  max-height: 80vh;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+.parallax-window {
+  min-height: 70vh;
+  background: transparent;
+}
+
+figure video {
+  height: 80vh;
+  max-height: 600px;
+}
+
+
+#result .jumbotron {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vw * 0.7);
+  max-height: 80vh;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 0px;
+}

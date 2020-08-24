@@ -1,39 +1,324 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-    overflow: hidden;
-    background-color: #333;
+/*@import "node_modules/rfs/scss.scss";*/
+
+.title {
+  font-size: calc(1.375rem + 5vw);
 }
 
-li {
-    float: left;
+.subtitle {
+  font-size: calc(0.7rem + 1vw);
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.body-bg {
+  background-image: url(images/about_s.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+.about-space {
+  height: 60vh;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.about-bg {
+  background-color: rgb(0, 0, 0, 0.9);
 }
 
-.container {
+/*#about .jumbotron {
+  background-color: rgba(0, 0, 0, 0.3);
+}*/
+
+#tab-3 h2, #tab-3 h4, #tab-3 p {
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 420px) {
+  .body-bg {
+    background-image: url(images/about.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: calc(60vw);*/
+    /*min-height: 763px;*/
+    background-attachment: fixed;
+  }
+
+  .about-bg {
+    background-color: rgb(0, 0, 0, 0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.6) 100%);
+  }
+
+ /* .footer-bg {
+    background-color: rgba(0, 0, 0, 0);
+  }*/
+
+  #tab-3 .jumbotron {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  #tab-3 h2, #tab-3 h4, #tab-3 p {
+    color: #fff;
+  }
+
+  /*#about .container {
+    padding-right: 30vw;
+  }*/
+
+  .about-space {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 768px) {
+  /*.body-bg {
+    background-image: url(images/about_m.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vw * 0.7);
+    max-height: 80vh;
+    background-attachment: fixed;
+  }*/
+
+  #tab-3 .jumbotron {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  #tab-3 h2, #tab-3 h4, #tab-3 p {
+    color:black ;
+  }
+
+  #tab-3 .container {
+    padding-right: 30vw;
+  }
+
+  .about-bg {
+    background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+
+  }
+
+  .about-space {
+    height: 0;
+  }
+
+  .footer-bg {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media (min-width: 992px) {
+  /*.title {
+    font-size: 4rem;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+  }*/
+
+  /*.footer-bg {
+    background-color: rgba(0, 0, 0, 0);
+  }*/
+
+ /* .body-bg {
+    background-image: url(images/home_2020_2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }*/
+}
+
+body {
+  margin: 0;
+  font-family: freight-neo-pro, sans-serif;
+  }
+
+.navbar-brand
+  {
+    font-family: freightneocnd-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+  }
+
+
+#header {
+    z-index:9000;
+    transition: all 0.15s linear;
+}
+
+#header.active {
+     box-shadow: 0 0 2px rgba(0,0,0,0.4);   
+}
+
+/*.nav-link, .navbar-brand {
+  transition: opacity 0.5s;
+}*/
+
+/*.nav-link:hover, .navbar-brand:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}*/
+
+/* #indeximg .jumbotron {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1500px;
+  height: calc(100vw * 0.7);
+  max-height: 80vh;
+  margin: 0 auto;
+  margin-top: 5px;
+  border: 1px solid red;
+} */
+
+
+#hero .jumbotron {
+  background-color:transparent;
+  height: calc(80vh);
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+#hero .jumbotron .container {
+  position: fixed;
+  max-width: 4000px;
+  width: calc(100vw);
+  height: calc(50vh);
+  top: 50%;
+  left: 50%;
+  margin-top: calc(-25vh); /* Negative half of height. */
+  margin-left: calc(-50vw); /* Negative half of width. */
+  text-align: center;
+  /*z-index:-1;*/
+}
+
+/*#hero svg {
+  margin-top: 100px;
+}*/
+#indeximg {
+  padding-top: 72px;
+}
+
+#indeximg .jumbotron {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1500px;
+  height: calc(100vw * 0.7);
+  max-height: 80vh;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+#indeximg .jumbotron .bg-overlay {
+  max-width: 1500px;
+  height: calc(100vw * 0.7);
+  max-height: 80vh;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s; /*字消失的時間, 背景消失時間*/
+}
+
+#indeximg .jumbotron:hover .bg-overlay {
+  max-width: 1500px;
+  height: calc(100vw * 0.7);
+  max-height: 80vh;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s, visibility 0.5s; /*字出現的時間, 背景出現時間*/
+}
+
+/*#indeximg .jumbotron .container {
   position: relative;
+  top: calc(100vh * 0.35 - 55px);
+  text-align: center;
+  border: 1px solid green;
+}*/
+
+#indeximg .jumbotron h1 {
+    color: rgb(255, 255, 255);
+    float: none;
+    font-family: bjpg;
+    font-size: 24px;
+    font-style:'Shift', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 3px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0px;
+    text-transform: none;
+    width: 100%;
+    margin: auto;
+}
+#indeximg .jumbotron p {
+    color: rgb(255, 255, 255);
+    float: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 12px;
+    text-transform: none;
+    width: 100%;
+    margin: auto;
 }
 
-.center {
-  position: absolute;
-  top: 8px;
-  left: 16px
+.img-description {
+  transition: 2s; /*字往下移的時間*/
+  transform: translateY(1em);
+}
+
+#indeximg .jumbotron:hover .img-description {
+  transition: 0.5s; /*字往上移的時間*/
+  transform: translateY(0);
+}
+
+#tab-3 h2 {
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  /*margin-top: 30vh;*/
+}
+
+
+/*#about {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh);
+}*/
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+
+/*.footer-about {
+  background-color: brown;
+}*/
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent.current {
+  display: block;
 }
